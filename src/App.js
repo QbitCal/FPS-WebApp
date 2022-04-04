@@ -1,9 +1,12 @@
-import './App.css';
+import './styles/App.css';
 import React from 'react';
 import {BrowserRouter as Router, Switch, Routes, Route} from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './pages';
+import Home from './pages/home';
 import Reports from './pages/reports';
+import Login from './pages';
+import Appointments from './pages/appointments';
+import Clients from './pages/clients';
 
 class App extends React.Component {
   render() {
@@ -11,8 +14,11 @@ class App extends React.Component {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/' element={<Login/>}/>
           <Route path='/reports' element={<Reports/>}/>
+          <Route path='/home' element={<Home/>}/>
+          <Route path='/appointments' element={<Appointments/>}/>
+          <Route path='/clients' element={<Clients/>}/>
         </Routes>
       </Router>
     );

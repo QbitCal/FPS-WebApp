@@ -1,0 +1,40 @@
+body {
+    background-color: #B9B7BD;
+  }
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+input {
+    align-items: center;
+}
+.username {
+    width: 100%;
+}
+.password{
+    width: 100%;
+}
+form {
+    align-items: center;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+form > div {
+    flex: 10%;
+}
+.LogBtn {
+    border-radius: 4px;
+    background: #b68d40;
+    padding: 10px 22px;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+.LogBtn:hover{
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+}
