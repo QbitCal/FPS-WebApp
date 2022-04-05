@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+import axios from 'axios';
 
 const WeeklyDescReport = () => {
   return (
-    <div>WeeklyDescReport</div>
+    <div>Description Report - Weekly</div>
+    
     
   )
 }
