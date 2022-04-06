@@ -1,0 +1,9 @@
+.button-bar{
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color:#122620;
+    border-radius: 25px;
+    padding: 30px;
+    width: 90%;
+    margin: auto;
+}
