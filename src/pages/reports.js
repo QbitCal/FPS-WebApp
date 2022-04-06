@@ -1,19 +1,22 @@
 import React from 'react'
-// import { Dropdown } from 'react-bootstrap';
-// import { DropdownButton } from 'react-bootstrap';
 
 // TODO: May need to create a custom dropdown if the semantic ui dropdown doesnt work
-import { Dropdown } from 'semantic-ui-react'
+import { Dropdown } from 'react-bootstrap'
+import { DropdownButton } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.css';
+import '../styles/default.css'
+
 
 const Reports = () => {
   return (
-    <div style={{
+    <div className='div-master' style={{
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            height: '90vh'
+            height: '90vh',
         }}
     >
+      <body className='body-master'>
         <div className='pageContent'>
             <h1>Reports</h1>
             <br />
@@ -23,22 +26,20 @@ const Reports = () => {
             </p>
             <br />
             <br />
-            <div className='dropdown'>
-                <ReportDropdown />
+            <div>
+                <DropdownButton className="dropdown-basic-button" id="dropdown-basic-button" title="Select Appointment Report Type">
+                  <Dropdown.Item href="#">Description Report - Weekly</Dropdown.Item>
+                  <Dropdown.Item href="#">Geographic Map - Weekly</Dropdown.Item>
+                  <Dropdown.Item href="#">Heat Map - Monthly</Dropdown.Item>
+                </DropdownButton>
+            </div>
+            <div className='report-body'>
+                <div className='placeholder'></div >
             </div>
         </div>
+      </body>
     </div>
   )
 }
-
-const ReportDropdown = () => (
-    <Dropdown text='DROPDOWN LABEL: Select Appointment Report Type' >
-      <Dropdown.Menu>
-        <Dropdown.Item text='Description Report - Weekly' />
-        <Dropdown.Item text='Geographic Map - Weekly' />
-        <Dropdown.Item text='Heat Map - Monthly' />
-      </Dropdown.Menu>
-    </Dropdown>
-  )
 
 export default Reports
