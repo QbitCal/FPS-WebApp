@@ -2,7 +2,7 @@ import React from 'react'
 
 const Appointments = () => {
   return (
-    <div style={{
+    <div className='div-master' style={{
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
@@ -17,6 +17,15 @@ const Appointments = () => {
             This will have a table with recent appointmets and the ability to add and change appointments.
             </p>
             <br />
+            <br />
+            <div>
+                <form className='search-form'>
+                    <input type="text" className='search' 
+                    id="search" name='search' 
+                    placeholder='Enter name...' />
+                    <input className='search-button' type="submit" value="Search"/>
+                </form>
+            </div>
             <div className='appTableWrapper'>
                 <table className='appointments'>
                     <tr>

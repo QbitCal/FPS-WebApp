@@ -3,7 +3,7 @@ import "../styles/login.css";
 
 const Login = () => {
   return (
-    <div style={{
+    <div className='div-master' style={{
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',

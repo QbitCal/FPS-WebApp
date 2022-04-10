@@ -5,6 +5,7 @@ import { Dropdown } from 'react-bootstrap'
 import { DropdownButton } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/default.css'
+import '../styles/reports.css'
 
 
 const Reports = () => {

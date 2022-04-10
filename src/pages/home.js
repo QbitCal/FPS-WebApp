@@ -1,10 +1,11 @@
 import React from 'react'
 import '../styles/default.css';
 import { NavLink } from '../components/Navbar/NavbarElements';
+import '../styles/home.css'
 
 const Home = () => {
   return (
-    <div style={{
+    <div className='div-master' style={{
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',

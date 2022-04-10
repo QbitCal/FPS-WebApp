@@ -7,6 +7,7 @@ import Reports from './pages/reports';
 import Login from './pages';
 import Appointments from './pages/appointments';
 import Clients from './pages/clients';
+import './styles/default.css'
 
 class App extends React.Component {
   render() {
