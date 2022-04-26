@@ -1,0 +1,14 @@
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+li {
+    flex-basis: calc(25% - 20px);
+}
+a {
+    color: white;
+}
+a:hover {
+    color: #d6ad60;
+}
